@@ -4,19 +4,21 @@
 [![Build Status](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/build-status/master)
 [![Code Coverage](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bit-wasp/bitcoin-php/?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Bit-Wasp/bitcoin-php/?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/bitwasp/bitcoin/v/stable.png)](https://packagist.org/packages/bitwasp/bitcoin)
+[![Latest Stable Version](https://poser.pugx.org/protonlabs/bitcoin/v/stable.png)](https://packagist.org/packages/protonlabs/bitcoin)
 
 This repository contains an implementation of Bitcoin using mostly pure PHP.
+
+> This repository is a fork of [Bit-Wasp/bitcoin-php](https://github.com/Bit-Wasp/bitcoin-php) with modern PHP compatibility.
 
 *Warning*: This library does not support 32-bit installs of PHP. Please also note that composer is the only supported installation method.
 
 ## Installation
 
-You can install this library via Composer: `composer require bitwasp/bitcoin`
+You can install this library via Composer: `composer require protonlabs/bitcoin`
 
 ## Contributing
 
-All contributions are welcome. Please see [[this page](https://github.com/Bit-Wasp/bitcoin-php/blob/master/CONTRIBUTING.md)] before you get started
+All contributions are welcome. Please see [[this page](https://github.com/ProtonMail/bitcoin-php/blob/master/CONTRIBUTING.md)] before you get started
 
 ## Documentation
 

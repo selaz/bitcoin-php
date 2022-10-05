@@ -351,6 +351,7 @@ class Opcodes implements \ArrayAccess
     /**
      * @param int $pos
      */
+    #[\ReturnTypeWillChange]
     public function offsetUnset($pos)
     {
         $this->errorNoWrite();
@@ -360,6 +361,7 @@ class Opcodes implements \ArrayAccess
      * @param int $pos
      * @param mixed $value
      */
+    #[\ReturnTypeWillChange]
     public function offsetSet($pos, $value)
     {
         $this->errorNoWrite();
