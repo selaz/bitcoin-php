@@ -191,7 +191,7 @@ class BloomFilter extends Serializable
     public static function idealSize(int $nElements, float $fpRate): int
     {
         return (int) floor(
-            bcdiv(
+            +bcdiv(
                 min(
                     bcmul(
                         bcmul(
@@ -221,7 +221,7 @@ class BloomFilter extends Serializable
     public static function idealNumHashFuncs(int $filterSize, int $nElements)
     {
         return (int) floor(
-            min(
+            +min(
                 bcmul(
                     bcdiv(
                         bcmul(
