@@ -169,6 +169,7 @@ class Parser implements \Iterator
     /**
      *
      */
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->execPtr = 0;
@@ -178,6 +179,7 @@ class Parser implements \Iterator
     /**
      * @return Operation
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         if (isset($this->array[$this->execPtr])) {
@@ -192,6 +194,7 @@ class Parser implements \Iterator
     /**
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return $this->execPtr;
@@ -200,6 +203,7 @@ class Parser implements \Iterator
     /**
      * @return Operation|null
      */
+    #[\ReturnTypeWillChange]
     public function next()
     {
         $ptr = $this->execPtr;
@@ -214,6 +218,7 @@ class Parser implements \Iterator
     /**
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         return isset($this->array[$this->execPtr]) || $this->position < $this->end;
