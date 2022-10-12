@@ -40,11 +40,13 @@ class Stack implements \Countable, \ArrayAccess, \Iterator
     /**
      * @return BufferInterface
      */
+    #[\ReturnTypeWillChange]
     public function current()
     {
         return $this->values[$this->position];
     }
 
+    #[\ReturnTypeWillChange]
     public function next()
     {
         ++$this->position;
@@ -53,6 +55,7 @@ class Stack implements \Countable, \ArrayAccess, \Iterator
     /**
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function key()
     {
         return $this->position;
@@ -61,11 +64,13 @@ class Stack implements \Countable, \ArrayAccess, \Iterator
     /**
      * @return bool
      */
+    #[\ReturnTypeWillChange]
     public function valid()
     {
         return isset($this->values[$this->position]);
     }
 
+    #[\ReturnTypeWillChange]
     public function rewind()
     {
         $this->position = 0;
@@ -74,6 +79,7 @@ class Stack implements \Countable, \ArrayAccess, \Iterator
     /**
      * @return int
      */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->values);
