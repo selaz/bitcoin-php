@@ -41,7 +41,7 @@ class InputCollectionMutator extends AbstractCollectionMutator
 
     public function valid()
     {
-        $this->iterator->valid();
+        return $this->iterator->valid();
     }
 
 
