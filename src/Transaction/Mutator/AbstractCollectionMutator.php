@@ -12,6 +12,16 @@ abstract class AbstractCollectionMutator implements \Iterator, \ArrayAccess, \Co
     protected $set;
 
     /**
+     * @var \Iterator
+     */
+    protected $iterator;
+
+    public function __construct(array $inputs)
+    {
+
+    }
+
+    /**
      * @return array
      */
     public function all(): array

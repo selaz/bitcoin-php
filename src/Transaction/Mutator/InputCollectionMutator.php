@@ -21,6 +21,7 @@ class InputCollectionMutator extends AbstractCollectionMutator
         }
 
         $this->set = \SplFixedArray::fromArray($set, false);
+        $this->iterator = $this->set->getIterator();
     }
 
     /**
@@ -28,8 +29,16 @@ class InputCollectionMutator extends AbstractCollectionMutator
      */
     public function current(): InputMutator
     {
-        return $this->set->current();
+        return $this->iterator->current();
+        //return $this->set->current();
     }
+
+    public function rewind()
+    {
+        //$this->set->rewind();
+        $this->iterator->rewind();
+    }
+
 
     /**
      * @param int $offset
