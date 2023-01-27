@@ -39,6 +39,11 @@ class InputCollectionMutator extends AbstractCollectionMutator
         $this->iterator->rewind();
     }
 
+    public function valid()
+    {
+        $this->iterator->valid();
+    }
+
 
     /**
      * @param int $offset
