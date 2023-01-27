@@ -44,6 +44,11 @@ class InputCollectionMutator extends AbstractCollectionMutator
         return $this->iterator->valid();
     }
 
+    public function key()
+    {
+        return $this->iterator->key();
+    }
+
 
     /**
      * @param int $offset
