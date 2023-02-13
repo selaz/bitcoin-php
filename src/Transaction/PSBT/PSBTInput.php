@@ -317,8 +317,8 @@ class PSBTInput
         return $this->partialSig[$pubKey->getBinary()];
     }
 
-    public function addPartialSignature(BufferInterface $pubKey, SignatureInterface $sig){
-        $this->partialSig[$pubKey->getBinary()] = $sig->getBinary();
+    public function addPartialSignature(BufferInterface $pubKey, BufferInterface $signature){
+        $this->partialSig[$pubKey->getBinary()] = $signature;
     }
 
 
