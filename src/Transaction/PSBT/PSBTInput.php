@@ -15,6 +15,8 @@ use BitWasp\Bitcoin\Serializer\Script\ScriptWitnessSerializer;
 use BitWasp\Bitcoin\Serializer\Transaction\TransactionOutputSerializer;
 use BitWasp\Bitcoin\Transaction\TransactionFactory;
 use BitWasp\Bitcoin\Transaction\TransactionInterface;
+
+use BitWasp\Bitcoin\Crypto\EcAdapter\Signature\SignatureInterface;
 use BitWasp\Bitcoin\Transaction\TransactionOutputInterface;
 use BitWasp\Buffertools\Buffer;
 use BitWasp\Buffertools\BufferInterface;
