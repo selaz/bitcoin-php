@@ -22,7 +22,7 @@
     "pleonasm/merkle-tree": "~1.0.0",
     "composer/semver": "^1.4.0|^3.2.0",
     "lastguest/murmurhash": "^v2.0.0",
-    "mdanter/ecc": "^0.5.0|^1.0.0",
+    "selaz/ecc": "dev-master",
     "selaz/buffertools": "dev-master",
     "bitwasp/bech32": "^0.0.1"
   },
