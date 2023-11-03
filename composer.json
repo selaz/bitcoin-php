@@ -26,6 +26,9 @@
     "selaz/buffertools": "dev-master",
     "bitwasp/bech32": "^0.0.1"
   },
+  "replace": {
+    "bitwasp/bitcoin": "*"
+  },
   "suggest": {
     "ext-secp256k1": "The secp256k1 library for fast and safe elliptic curve operations",
     "ext-bitcoinconsensus": "The bitcoinconsensus library for safest possible script verification"
